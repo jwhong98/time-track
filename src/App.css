@@ -13,5 +13,14 @@ body {
 
 main {
   padding: 20px;
+  display: -ms-grid;
+  display: grid;
+  gap: 20px;
+}
+
+.cardGrid {
+  display: -ms-grid;
+  display: grid;
+  gap: 20px;
 }
 /*# sourceMappingURL=App.css.map */
