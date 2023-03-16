@@ -1,0 +1,33 @@
+@import "../../styles/variables";
+@import "../../styles/mixins";
+
+.timeCard {
+  background: hsl(15, 100%, 70%);
+  padding-top: 35px;
+  border-radius: 10px;
+  background-image: url("../../assets/images/icon-work.svg");
+  background-repeat: no-repeat;
+  background-position: top -10px right 20px;
+  &__content {
+    background: $cardBgColor;
+    border-radius: inherit;
+    padding: 30px;
+    color: #fff;
+    &__head {
+      @include flexBetween;
+      margin-bottom: 10px;
+      font-size: 18px;
+    }
+
+    &__info {
+      @include flexBetween;
+      &__time {
+        font-size: 30px;
+        font-weight: 300;
+      }
+      &__duration {
+        color: $textColor;
+      }
+    }
+  }
+}

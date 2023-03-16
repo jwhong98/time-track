@@ -1,4 +1,5 @@
 import "./App.css";
+import TimeCard from "./components/TimeCard/TimeCard";
 import UserCard from "./components/UserCard/UserCard";
 
 function App() {
@@ -6,6 +7,9 @@ function App() {
     <div className="App">
       <main>
         <UserCard />
+        <section className="cardGrid">
+          <TimeCard />
+        </section>
       </main>
     </div>
   );
