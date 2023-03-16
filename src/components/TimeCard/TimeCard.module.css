@@ -1,8 +1,8 @@
 .timeCard {
-  background: #ff8c66;
   padding-top: 35px;
   border-radius: 10px;
   background-image: url("../../assets/images/icon-work.svg");
+  background-color: #ff8c66;
   background-repeat: no-repeat;
   background-position: top -10px right 20px;
 }
@@ -28,6 +28,12 @@
   font-size: 18px;
 }
 
+@media only screen and (min-width: 1000px) {
+  .timeCard__content__head {
+    margin-bottom: 30px;
+  }
+}
+
 .timeCard__content__info {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -40,9 +46,28 @@
           justify-content: space-between;
 }
 
+@media only screen and (min-width: 1000px) {
+  .timeCard__content__info {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    gap: 10px;
+  }
+}
+
 .timeCard__content__info__time {
   font-size: 30px;
   font-weight: 300;
+}
+
+@media only screen and (min-width: 1000px) {
+  .timeCard__content__info__time {
+    font-size: 50px;
+  }
 }
 
 .timeCard__content__info__duration {

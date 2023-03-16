@@ -4,6 +4,8 @@
   background: $cardBgColor;
   color: $textColor;
   border-radius: 20px;
+  grid-column: 1 / 2;
+  max-height: 100%;
 
   &__head {
     background: hsl(246, 80%, 60%);
@@ -13,6 +15,17 @@
     gap: 15px;
     border-radius: 20px;
     line-height: 1.5;
+
+    @media only screen and (min-width: 1000px) {
+      flex-direction: column;
+      align-items: flex-start;
+      padding-right: 0;
+      max-width: 236px;
+
+      img {
+        margin-bottom: 10px;
+      }
+    }
 
     img {
       width: 70px;
@@ -24,6 +37,12 @@
         color: #fff;
         font-size: 25px;
         font-weight: 300;
+
+        @media only screen and (min-width: 1000px) {
+          font-size: 35px;
+          line-height: 1.25;
+          margin-bottom: 30px;
+        }
       }
     }
   }
@@ -35,7 +54,15 @@
     justify-content: space-around;
     color: $filterColor;
 
+    @media only screen and (min-width: 1000px) {
+      flex-direction: column;
+      padding-left: 30px;
+      align-items: flex-start;
+      // height: 100%;
+    }
+
     &__filter {
+      font-size: 20px;
       cursor: pointer;
     }
 
