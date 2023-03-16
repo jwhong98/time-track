@@ -1,0 +1,45 @@
+@import "../../styles/variables";
+
+.userCard {
+  background: $cardBgColor;
+  color: $textColor;
+  border-radius: 20px;
+
+  &__head {
+    background: hsl(246, 80%, 60%);
+    display: flex;
+    align-items: center;
+    padding: 25px 20px;
+    gap: 15px;
+    border-radius: 20px;
+    line-height: 1.5;
+
+    img {
+      width: 70px;
+      border: 3px solid #fff;
+      border-radius: 50%;
+    }
+    &__text {
+      &__name {
+        color: #fff;
+        font-size: 25px;
+        font-weight: 300;
+      }
+    }
+  }
+
+  &__filters {
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    &__filter {
+      cursor: pointer;
+    }
+
+    &__filter:hover {
+      color: #fff;
+    }
+  }
+}
